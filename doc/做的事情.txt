@@ -1,0 +1,8 @@
+1、pip更换源
+2、安装django
+3、将django的工具添加到path中：
+	通pip install django可以查到对应的安装目录，找到python的script目录就行。
+4、新建项目文件夹Hello_UAV
+	django-admin startproject Hello_UAV
+5、新建应用 uav_simulator
+	python manage.py startapp uav_simulator

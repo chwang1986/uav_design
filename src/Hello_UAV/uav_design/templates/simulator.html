@@ -1,0 +1,27 @@
+{% extends "uav_design\base.html" %}
+
+{% block title %}UAV Simulator{% endblock %}
+
+{% load static %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-6">
+      <!-- 三维模型代码 -->
+	  三维模型代码
+	  <!-- 在模板中添加一个用于显示 Three.js 场景的 div 元素 -->
+		<div id="scene-container">
+		<!-- 引入 Three.js 库 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+		<script src="{% static 'js/scene.js' %}"></script>
+		
+
+		</div>
+
+    </div>
+    <div class="col-md-6">
+      <!-- 数据显示代码 -->
+	  数据显示代码
+    </div>
+  </div>
+{% endblock %}
